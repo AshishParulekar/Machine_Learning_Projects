@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
 
-saved=pickle.load(open('model.pkl',"rb"))
+saved=pickle.load(open('model',"rb"))
 Cv=saved[1]
 Log=saved[0]
 # function for Data processing 
