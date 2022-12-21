@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 import joblib
 
 
-saved_Data=pickle.load(open('New.pkl','rb'))
+#saved_Data=pickle.load(open('New.pkl','rb'))
 
 
 filename = 'finalized_model.sav'
