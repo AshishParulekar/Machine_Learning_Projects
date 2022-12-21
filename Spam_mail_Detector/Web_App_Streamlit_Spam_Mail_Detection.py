@@ -1,4 +1,4 @@
-import pickle as pkl
+import pickle
 import streamlit as st
 import pandas as pd
 import nltk
@@ -9,12 +9,12 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 nltk.download('punkt')
 nltk.download('wordnet')
-from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer 
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
+
 from sklearn.metrics import confusion_matrix,roc_curve,roc_auc_score,plot_confusion_matrix
 
-saved=pkl.load(open('Saved_model','rb'))
+saved=pickle.load(open('Saved_model','rb'))
 
 Cv=saved[1]
 Log=saved[0]
@@ -56,8 +56,7 @@ ip=st.text_input('Please enter the Subject')
 bu=st.button('Check')
 if bu==True:
     check=Spam_Detection(ip)
-    
-print(pd.__version__)
+ 
 
 
 
