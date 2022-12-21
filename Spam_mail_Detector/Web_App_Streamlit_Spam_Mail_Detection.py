@@ -12,7 +12,7 @@ nltk.download('wordnet')
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-saved=pickle.load(open('Saved_model','rb'))
+saved=pickle.load(open('Saved_model.pkl','rb'))
 
 Cv=saved[1]
 Log=saved[0]
