@@ -1,5 +1,5 @@
 streamlit==1.0.0
-Sklearn==0.22
+Sklearn==0.24
 pandas 
 numpy
 
