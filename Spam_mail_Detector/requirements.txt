@@ -1,6 +1,12 @@
 streamlit==1.11.1
-cikit-learn>=0.18
-pandas>=0.19
-numpy>=1.9.2
+pandas 
+numpy 
+sklearn==0.24
 pickle-mixin==1.0.2
 nltk==3.6.3
+#punkt
+#nltk.download('stopwords')
+#nltk.download('wordnet')
+#nltk.download('wordnet')
+#nltk.downloader.Downloader()
+#PIL==5.1.0
