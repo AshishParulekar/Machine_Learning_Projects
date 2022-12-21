@@ -51,7 +51,7 @@ def Spam_Detection(text):
 
 #Streamlit_Code
 
-st.title('SPAM MAIL DETECTECTOR  !')
+st.title('SPAM MAIL DETECTOR !')
 ip=st.text_input('Please enter the Subject')
 bu=st.button('Check')
 if bu==True:
