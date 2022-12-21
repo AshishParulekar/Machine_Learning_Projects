@@ -12,7 +12,7 @@ nltk.download('wordnet')
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-saved_Data=pickle.load(open('Spam-mail-Detector/model','rb'))
+saved_Data=pickle.load(open('Spam-mail-Detector/model.pkl','rb'))
 
 Cv=saved_Data[1]
 Log=saved_Data[0]
