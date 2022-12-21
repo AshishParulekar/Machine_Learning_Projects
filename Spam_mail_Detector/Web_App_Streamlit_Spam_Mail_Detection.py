@@ -11,9 +11,19 @@ nltk.download('punkt')
 nltk.download('wordnet')
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
+import joblib
 
 
 saved_Data=pickle.load(open('New.pkl','rb'))
+
+
+filename = 'finalized_model.sav'
+saved_Data=joblib.load(filename)
+ 
+# some time later...
+ 
+# load the model from disk
+loaded_model = joblib.load(filename)
 Cv=saved_Data[1]
 Log=saved_Data[0]
 # function for Data processing 
