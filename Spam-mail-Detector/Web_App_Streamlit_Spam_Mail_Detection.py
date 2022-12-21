@@ -44,7 +44,7 @@ def Spam_Detection(text):
         st.image('SPAM.png')
         #return '** Spam **'
     else:
-        st.image('NO_SPAM.png')
+        st.image('Spam-mail-Detector/NO_SPAM.png')
         #return '** Not_Spam **'
 
 #Streamlit_Code
