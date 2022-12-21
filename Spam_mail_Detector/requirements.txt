@@ -1,2 +1,2 @@
 streamlit
-Sklearn
+Sklearn==0.22
