@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix,roc_curve,roc_auc_score,plot_confusion_matrix
 
-saved=pkl.load(open('Saved_model','rb'))
+saved=pkl.load(open('Saved_model.pkl','rb'))
 
 Cv=saved[1]
 Log=saved[0]
