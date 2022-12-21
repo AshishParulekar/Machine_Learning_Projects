@@ -12,8 +12,6 @@ nltk.download('wordnet')
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-from sklearn.metrics import confusion_matrix,roc_curve,roc_auc_score,plot_confusion_matrix
-
 saved=pickle.load(open('Saved_model','rb'))
 
 Cv=saved[1]
