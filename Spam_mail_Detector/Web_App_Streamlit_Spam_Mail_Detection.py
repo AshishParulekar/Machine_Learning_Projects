@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix,roc_curve,roc_auc_score,plot_confusion_matrix
 
-saved=pkl.load(open('Saved_model.pkl','rb'))
+saved=pkl.load(open('Saved_model','rb'))
 
 Cv=saved[1]
 Log=saved[0]
@@ -56,6 +56,8 @@ ip=st.text_input('Please enter the Subject')
 bu=st.button('Check')
 if bu==True:
     check=Spam_Detection(ip)
+    
+print(pd.__version__)
 
 
 
