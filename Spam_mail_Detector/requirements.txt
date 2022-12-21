@@ -1,6 +1,6 @@
 streamlit==1.11.1
+sklearn
 pandas 
 numpy 
-sklearn
 pickle-mixin==1.0.2
 nltk==3.6.3
