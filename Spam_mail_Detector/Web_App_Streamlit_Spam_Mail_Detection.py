@@ -12,11 +12,10 @@ nltk.download('wordnet')
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-#saved=pickle.load(open('Saved_model.pkl','rb'))
-sav=pickle.load(open('Saved_model.pkl',"rb"))
 
-Cv=sav[1]
-Log=sav[0]
+saved=pickle.load(open('model',"rb"))
+Cv=saved[1]
+Log=saved[0]
 # function for Data processing 
 def process(text):
   token=word_tokenize(text)
@@ -50,12 +49,13 @@ def Spam_Detection(text):
 
 #Streamlit_Code
 
-st.title('SPAM MAIL DETECTECTOR  !')
+st.title('SPAM MAIL DETECTOR !')
 ip=st.text_input('Please enter the Subject')
 bu=st.button('Check')
 if bu==True:
     check=Spam_Detection(ip)
- 
+    
+
 
 
 
