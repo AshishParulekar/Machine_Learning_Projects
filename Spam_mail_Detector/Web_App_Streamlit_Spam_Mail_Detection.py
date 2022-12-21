@@ -17,8 +17,8 @@ import joblib
 #saved_Data=pickle.load(open('New.pkl','rb'))
 
 
-filename = 'finalized_model.sav'
-saved_Data=joblib.load(filename)
+#filename = 'finalized_model.sav'
+saved_Data=joblib.load(finalized_model.sav)
  
 # some time later...
  
