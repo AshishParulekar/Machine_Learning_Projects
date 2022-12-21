@@ -4,9 +4,4 @@ numpy
 sklearn
 pickle-mixin==1.0.2
 nltk==3.6.3
-#punkt
-#nltk.download('stopwords')
-#nltk.download('wordnet')
-#nltk.download('wordnet')
-#nltk.downloader.Downloader()
-#PIL==5.1.0
+
