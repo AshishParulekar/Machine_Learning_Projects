@@ -41,7 +41,7 @@ def Spam_Detection(text):
     Vector=Cv.transform([text]).toarray()
     result=Log.predict(Vector)
     if(result==1):
-        st.image('SPAM.png')
+        st.image('Spam-mail-Detector/SPAM.png')
         #return '** Spam **'
     else:
         st.image('Spam-mail-Detector/NO_SPAM.png')
