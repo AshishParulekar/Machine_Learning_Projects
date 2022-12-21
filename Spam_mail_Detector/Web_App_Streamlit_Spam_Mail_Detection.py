@@ -13,9 +13,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
 
-saved=pickle.load(open('model',"rb"))
-Cv=saved[1]
-Log=saved[0]
+saved_Data=pickle.load(open('model',"rb"))
+Cv=saved_Data[1]
+Log=saved_Data[0]
 # function for Data processing 
 def process(text):
   token=word_tokenize(text)
