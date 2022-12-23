@@ -11,7 +11,7 @@ def decompress_pickle(file):
      data = pkl.load(data)
      return data
     
-simi=decompress_pickle('Movie_Recommandtion_System.pbz2')
+simi=decompress_pickle('Movie-Recommender/Movie_Recommandtion_System.pbz2')
 
 # to load Dataset
 Movies=pkl.load(open('Data_Frame.pkl','rb'))
