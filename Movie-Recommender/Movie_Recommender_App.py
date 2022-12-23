@@ -18,7 +18,7 @@ Movies=pkl.load(open('Movie-Recommender/Data_Frame.pkl','rb'))
 
 
 st.header('Movie Recommender System')
-inp=st.selectbox('Select Movie Name ',Movies['title'])
+inp=st.selectbox('Select Movie Name ',Movies['title'].unique())
 yes=st.button('Recommend')
 #A=HTML("<img src='http://image.tmdb.org/t/p/w185//btnl50ZDJDSCal2NLQIYWw0XxvH.jpg' style='height:100px;'>")
 #st.write(A)
